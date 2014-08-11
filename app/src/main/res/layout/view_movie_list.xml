@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/movie_list">
+
+    <ImageView
+        android:id="@+id/movie_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="30"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/movie_title_text_view"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="left"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/movie_image_view"
+        android:text="@string/app_name"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2013"
+        android:id="@+id/movie_year_text_view"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="left"
+        android:layout_below="@+id/movie_title_text_view"
+        android:layout_toRightOf="@+id/movie_image_view"
+        android:layout_alignRight="@+id/movie_title_text_view"
+        android:layout_alignEnd="@+id/movie_title_text_view"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="131 minutes"
+        android:id="@+id/movie_runtime_text_view"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="left"
+        android:layout_below="@+id/movie_year_text_view"
+        android:layout_toRightOf="@+id/movie_image_view"
+        android:layout_alignRight="@+id/movie_year_text_view"
+        android:layout_alignEnd="@+id/movie_year_text_view"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" />
+
+</RelativeLayout>
